@@ -9,7 +9,7 @@ file.close()
 
 # запись файла 'in.txt' в файл 'out.txt'
 file_name = 'out.txt'
-file = open(file_name, mode='a')
+file = open(file_name, mode='w', encoding='utf8')
 file.write(file_content)
 file.close()
 
@@ -18,7 +18,7 @@ file_name = 'Pushkin.txt'
 file = open(file_name, mode='r', encoding='utf8')
 file_content = file.read()
 file.close()
-pprint(file_content)
+#pprint(file_content)
 
 # запись файла 'Pushkin.txt' в конец файла 'out.txt'
 file_name = 'out.txt'
