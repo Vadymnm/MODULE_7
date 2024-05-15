@@ -22,7 +22,7 @@ file.close()
 
 # запись файла 'Pushkin.txt' в конец файла 'out.txt'
 file_name = 'out.txt'
-file = open(file_name, mode='a')
+file = open(file_name, mode='a',encoding='cp1251')
 file.write(file_content)
 file.close()
 
